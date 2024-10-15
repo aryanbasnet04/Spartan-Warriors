@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.board-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 5px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #f4f4f4;
+}
+
+.player {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+.opponent {
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+#status {
+  margin-top: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.control-buttons-1,
+.control-buttons-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(3, 50px);
+  gap: 5px;
+}
+.control-buttons-1 {
+  position: relative;
+  left: -186px;
+  bottom: 500px;
+}
+
+.control-buttons-2 {
+  position: relative;
+  left: 186px;
+  bottom: 500px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  background-color: #ddd;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.invisible {
+  visibility: hidden;
+}
+button {
+  padding: 12px 24px;
+  border-radius: 9px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+}
+
+h3 {
+  color: #333;
+  font-size: 24px;
+}
+.player-1-h1 {
+  position: relative;
+  left: -227px;
+  bottom: 495px;
+}
+.player-2-h1 {
+  position: relative;
+  left: 140px;
+  bottom: 495px;
+}
+h1 {
+  font-size: 38px;
+}
+#player1Character {
+  font-size: 24px;
+  position: relative;
+  left: -230px;
+  bottom: 300px;
+}
+#player2Character {
+  font-size: 24px;
+  position: relative;
+  left: 140px;
+  bottom: 300px;
+}

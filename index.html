@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spartan Warriors: Battle Arena</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Spartan Warriors</h1>
+    <h3>Red Spartan vs Blue Spartan</h3>
+
+    <div class="board-game">
+      <div id="board" class="board"></div>
+    </div>
+
+    <div id="status">
+      <p id="turn-status">Player Turn: Red Spartan</p>
+      <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <div class="controls">
+      <div>
+        <h3 class="player-1-h1">Player 1 (Red Spartan)</h3>
+        <select
+          id="player1Character"
+          onchange="updateCharacter('player', this.value)"
+        >
+          <option value="🛡️">Spartan</option>
+          <option value="🕷️">Spider-Man</option>
+          <option value="🦸‍♂️">Iron Man</option>
+          <option value="🦸‍♀️">Wonder Woman</option>
+        </select>
+        <div class="control-buttons-1">
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('player', 'up')">W</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('player', 'left')">A</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('player', 'right')">D</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('player', 'down')">S</div>
+          <div class="btn invisible"></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="player-2-h1">Player 2 (Blue Spartan)</h3>
+        <select
+          id="player2Character"
+          onchange="updateCharacter('opponent', this.value)"
+        >
+          <option value="⚔️">Spartan</option>
+          <option value="🦸‍♂️">Captain America</option>
+          <option value="🦸‍♀️">Black Widow</option>
+          <option value="🦸‍♂️">Thor</option>
+        </select>
+        <div class="control-buttons-2">
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('opponent', 'up')">↑</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('opponent', 'left')">←</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('opponent', 'right')">→</div>
+          <div class="btn invisible"></div>
+          <div class="btn" onclick="movePlayer('opponent', 'down')">↓</div>
+          <div class="btn invisible"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
